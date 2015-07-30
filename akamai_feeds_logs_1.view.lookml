@@ -1,5 +1,5 @@
-- view: akamai_feed_sample
-  sql_table_name: public.akamai_feed_sample
+- view: akamai_feeds_logs_1
+  sql_table_name: public.akamai_feeds_logs_1
   fields:
 
   - dimension: clientip
@@ -19,7 +19,7 @@
     type: time
     timeframes: [time, date, week, month]
     sql: ${TABLE}.requesttime
-    
+
   - dimension_group: requesttime10mins
     type: string
     sql: left(requesttime,15)  
@@ -27,7 +27,7 @@
   - dimension_group: requesttime1min
     type: string
     sql: left(requesttime,16)  
-    
+
   - dimension: responsecode
     sql: ${TABLE}.responsecode
 
@@ -39,9 +39,6 @@
     
   - dimension: urlendpoint
     sql: substring(url, 37,10)
-    
-  - dimension: ondemand
-    sql: CASE WHEN (substring(url, 37,10)='summaries/' AND url like '%category=On%') OR substring(url, 37,10)='programmes' OR substring(url, 37,10)='ondemands/' THEN 1 ELSE 0 END 
 
   - dimension: useragent1
     sql: ${TABLE}.useragent1
@@ -81,6 +78,30 @@
 
   - dimension: useragent20
     sql: ${TABLE}.useragent20
+
+  - dimension: useragent21
+    sql: ${TABLE}.useragent21
+
+  - dimension: useragent22
+    sql: ${TABLE}.useragent22
+
+  - dimension: useragent23
+    sql: ${TABLE}.useragent23
+
+  - dimension: useragent24
+    sql: ${TABLE}.useragent24
+
+  - dimension: useragent25
+    sql: ${TABLE}.useragent25
+
+  - dimension: useragent26
+    sql: ${TABLE}.useragent26
+
+  - dimension: useragent27
+    sql: ${TABLE}.useragent27
+
+  - dimension: useragent28
+    sql: ${TABLE}.useragent28
 
   - dimension: useragent3
     sql: ${TABLE}.useragent3

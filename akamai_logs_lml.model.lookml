@@ -7,7 +7,7 @@
 
 # - explore: akamai_feeds_logs
 
-# - explore: akamai_feeds_logs_1
+- explore: akamai_feeds_logs_1
 
 # - explore: akamai_feeds_logs_mob
 
