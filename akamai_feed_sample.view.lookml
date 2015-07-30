@@ -36,9 +36,16 @@
 
   - dimension: url
     sql: ${TABLE}.url
+  
+  - dimension: urllen
+    type: number
+    sql: len(url)  
     
   - dimension: urlendpoint
     sql: substring(url, 37,10)
+    
+  - dimension: scheduleservice
+    sql: substring(url, 106,15)
     
   - dimension: ondemand
     sql: CASE WHEN (substring(url, 37,10)='summaries/' AND url like '%category=On%') OR substring(url, 37,10)='programmes' OR substring(url, 37,10)='ondemands/' THEN 1 ELSE 0 END 
