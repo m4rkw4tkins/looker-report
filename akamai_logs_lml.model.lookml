@@ -5,6 +5,8 @@
 
 - explore: akamai_feed_sample
 
+- explore: akamai_feeds_logs_small
+
 # - explore: akamai_feeds_logs
 
 - explore: akamai_feeds_logs_1

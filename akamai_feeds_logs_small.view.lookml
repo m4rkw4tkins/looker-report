@@ -1,4 +1,4 @@
-- view: akamai_feed_sample
+- view: akamai_feeds_logs_small
   sql_table_name: public.akamai_feeds_logs_small
   fields:
 
