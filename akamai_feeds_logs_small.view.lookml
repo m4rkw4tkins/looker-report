@@ -19,14 +19,11 @@
     type: time
     timeframes: [time, date, week, month]
     sql: ${TABLE}.requesttime
-    
-  - dimension_group: requesttime10mins
-    type: string
-    sql: left(requesttime,15)  
 
   - dimension_group: requesttime1min
-    type: string
-    sql: left(requesttime,16)  
+    type: time
+    timeframes: [minute]
+    sql: requesttime
     
   - dimension: responsecode
     sql: ${TABLE}.responsecode

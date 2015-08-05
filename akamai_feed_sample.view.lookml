@@ -26,7 +26,7 @@
 
   - dimension_group: requesttime1min
     type: string
-    sql: left(requesttime,16)  
+    sql: convert(timestamp,left(requesttime,16))
     
   - dimension: responsecode
     sql: ${TABLE}.responsecode
