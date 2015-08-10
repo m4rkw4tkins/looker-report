@@ -2,21 +2,21 @@
   title: Akamai Feeds Analysis
   layout: grid
   rows:
-  - height: 160
+  - height: 400
     elements: [schedule_events]
-  - height: 160
+  - height: 400
     elements: [schedule]
-  - height: 160
+  - height: 400
     elements: [ondemand_discovery] 
-  - height: 160
+  - height: 400
     elements: [search] 
-  - height: 160
+  - height: 400
     elements: [suggestions]
-  - height: 160
+  - height: 400
     elements: [mini_guide] 
-  - height: 160
+  - height: 400
     elements: [present_following]     
-  - height: 160
+  - height: 400
     elements: [guide]
 
 #  filters:
