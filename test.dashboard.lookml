@@ -1,5 +1,5 @@
-- dashboard: akamai_feeds_analysis
-  title: Akamai Feeds Analysis
+- dashboard: test_dash
+  title: Test Dash
   layout: grid
   rows:
   - height: 160
